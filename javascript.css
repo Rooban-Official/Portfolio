@@ -1,0 +1,97 @@
+* {
+	padding: 0;
+	margin: 0;
+	background-color: #12232e;
+}
+body {
+	overflow: hidden;
+} 
+div.heading p{
+	font-size: 35px;
+	position: absolute;
+	margin: 25px 0 0 50px;
+	color: #EEFBFB;
+	z-index: 1000;
+}
+div.waves {
+	position: relative;
+	display: flex;
+	left: 20%;	
+	transform: rotate(210deg);
+} 
+div.fill {
+	position: absolute;
+	left: 72%;
+	bottom: 57%;
+	background-color: #007cc7;
+	height: 1000px;
+	width: 700px;
+}
+div.content {
+	position: absolute;
+	left: 18%;
+}
+div.content p {
+	font-family: courier;
+	font-size: 35px;
+	color: #EEFBFB;
+}
+
+header {
+	position: absolute;
+	top: 10px;
+	left: 23cm;
+	width: 100%;
+	display: flex;
+	padding-right: 50px;
+	background-color: transparent;
+	justify-content: space-between;
+	padding-left: 100px;
+	z-index: 1	;
+}
+
+header ul {
+	background-color: transparent;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header ul li {
+	background-color: transparent;
+	position: relative;
+	list-style: none;
+}
+header ul li a{
+	background-color: transparent;
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 1s;
+}
+header ul li a.active {
+	background-color: transparent;
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: black;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 1s;
+	font-size: 20px;
+}
+
+header ul li a:hover {
+	background-color: transparent;
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: black;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 1s;
+	font-size: 21px;
+}
