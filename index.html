@@ -20,11 +20,7 @@ What are you doing here?! you sneaky developer...
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMWDE0VTD3"></script>
   <script>
-    
-    function hamburgerMenu() {
-      document.body.classList.toggle("stopscrolling");
-    }
-
+  
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);
@@ -68,6 +64,54 @@ What are you doing here?! you sneaky developer...
   <!-- google fonts-->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+      .nav {
+        position: fixed;
+        display: grid;
+        place-items: center;
+        width: 50px;
+        height: 100%;
+        padding: 3px;
+        color: wheat;
+      }
+      .nav a{
+        padding-left: 10px;
+        text-decoration: none;
+        color: white;
+      }
+      @media only screen and (max-width: 600px) {
+
+   #hamburger {
+    display: none;
+  }
+    .nav {
+         display: flex;
+         flex-direction: row;
+         height: 100%;
+         align-items: center;
+    } 
+    .nav ul {
+      text-decoration: none;
+    }
+  .poiu{
+    display: none;
+  }
+
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  text-decoration: none;
+}
+.nav ul li {
+  text-decoration: none;
+}
+    </style>
+
 
 <body class="body stipscrolling">
   <audio loop="" id="audioPlayer" style="display: none">
@@ -75,11 +119,31 @@ What are you doing here?! you sneaky developer...
   </audio>
   <noscript>Allow Javascript</noscript>
 
-  <header>
+  <article class="prenav">
+<section class="nav">
+      <div>
+            <ul>
+              <li><a href="#home"><span class="material-symbols-outlined">
+                home
+                </span></a></li>
+              <li><a href="#about"><span class="material-symbols-outlined">
+                person
+                </span></a></li>
+              <li><a href="#skills"><span class="material-symbols-outlined">
+                engineering
+                </span></a></li>
+              <li><a href="#projects"><span class="material-symbols-outlined">
+                draw
+                </span></a></li>
+            </ul>
+      </div>      
+        </section>
+  
+  <!-- <header>
     <div class="cursor-inner" id="cursor-inner"></div>
     <div class="cursor-outer" id="cursor-outer"></div>
 
-    <div class="navbar" id="navbar">
+    <!-- <div class="navbar" id="navbar">
       <div class="hey">Hey!</div>
       <div class="logo" tabindex="0" aria-label="vinod jangid logo">
         <div class="logo-top">
@@ -114,15 +178,15 @@ What are you doing here?! you sneaky developer...
         </ul>
       </div>
       <!-- navbar tabs ends -->
-    </div>
-  </header>
+    </div> -->
+  </header> -->
   <!-- header ends here -->
 
   <main>
     <!-- hamburger -->
-    <div class="hamburger" id="hamburger" data-aos="fade">
+    <div class="hamburger poiu" id="hamburger" data-aos="fade">
       <div class="hamburgerbase">
-        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+        <button  aria-label="Menu Button">
           <span class="burger-bar stopscrolling" id="burger-bar1"></span>
           <span class="burger-bar" id="burger-bar2"></span>
           <span class="burger-bar" id="burger-bar3"></span>
@@ -130,7 +194,7 @@ What are you doing here?! you sneaky developer...
       </div>
     </div>
     <!-- hamburger -->
-    <div class="mobiletogglemenu" id="mobiletogglemenu">
+    <!-- <div class="mobiletogglemenu" id="mobiletogglemenu">
       <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
         <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
           <a href="#home" tabindex="0" aria-label="Home menu button">
@@ -154,8 +218,9 @@ What are you doing here?! you sneaky developer...
           </a>
         </li>
       </ul>
-    </div>
+    </div> -->
     <!-- mobile toggle menu ends -->
+
 
     <section class="landing-page-container" id="home">
       <div class="blob"></div>
@@ -208,23 +273,25 @@ What are you doing here?! you sneaky developer...
         <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
           <a href="mailto:roobanofficial1@gmail.com" tabindex="-1">
             <button class="letsTalkBtn">
-              <p class="letsTalkBtn-text">Let's Talk!</p>
+              <p class="letsTalkBtn-text">Let's Talk!</p> 
               <span class="letsTalkBtn-BG"></span>
             </button></a>
-         
-          </div>
-          <!-- setting div ends -->
+            <div class="about-info">
+              <p class="about-info">
+                &nbsp; Scroll to know more
+              </p>
+              </div>
         </div>
-        <!-- contact-btn-div -->
-      </div>
-     
+
+        
+
     </section>
     <!-- landing page ends here -->
     <section class="about-section-container" id="about" data-aos="fade-up">
       <div class="about-section">
         <div class="section-heading">
           <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
-            &#60;/AboutMe&#62;
+            /AboutMe&#62;
           </h2>
           <p class="sectionHeadingP"></p>
         </div>
@@ -547,7 +614,7 @@ What are you doing here?! you sneaky developer...
     </section>
   </main>
   <!-- main ends here -->
-
+</article>
   <footer id="footer">
     <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
       <article aria-label="Back to top">&#8592;BACK TO TOP</article>
